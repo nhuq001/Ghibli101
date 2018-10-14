@@ -24,8 +24,8 @@ request.onload = function () {
       h1.textContent = movie.title;
 
       const p = document.createElement('p');
-      movie.description = movie.description.substring(0, 300);
-      p.textContent = `${movie.description}...`;
+      movie.description = movie.description.substring(0, 500);
+      p.textContent = `${movie.description}`;
 
       container.appendChild(card);
       card.appendChild(h1);
